@@ -1,0 +1,84 @@
+/* body */
+body {
+	min-height: 3000px;
+}
+
+/* Navbar */
+.navbar-brand {
+	font-family: viga, sans-serif;
+	font-size: 32px;
+}
+
+/* Kegunaan */
+.tombol {
+	text-transform: uppercase;
+	border-radius: 40px;
+	padding: 8px 30px 8px 30px;
+}
+
+
+/* Jumbotron */
+.jumbotron {
+	background-image: url(img/jumbotron.jpg);
+	background-size: cover;
+	height: 620px;
+	text-align: center;
+}
+.jumbotron .display-4 {
+	color: white;
+	padding-top: 33vh;
+	font-weight: 200;
+	font-size: 50px;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.8)
+}
+
+.jumbotron .display-4 span {
+	font-weight: 500;
+}
+
+
+/* Info Panel */
+.info-panel {
+	border-radius: 13px;
+	margin-top: -40px;
+	background-color: white;
+	padding: 20px;
+}
+
+
+
+/* Desktop Version */
+@media (min-width: 992px) {
+	.navbar-brand, .nav-link{
+		color: white !important;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.7)
+	}
+	.nav-link {
+		text-transform: uppercase;
+		margin-right: 20px;
+	}
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid blue;
+		width: 50%;
+		padding-bottom: 5px;
+		margin: auto;
+		margin-bottom: -8px;
+	}
+	.jumbotron {
+		margin-top: -77px;
+		height: 640px;
+	}
+	.jumbotron .display-4 {
+		font-size: 62px;
+	}
+	.info-panel {
+		margin-top: -85px;
+	}
+}
+
+/* mobile version */
+@media (min-width: 576px) {
+
+}
