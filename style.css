@@ -1,3 +1,9 @@
+:root {
+	--mainblue : #0D6EFD;
+	--bestfont : 'Poppins', sans-serif;
+	--mainlinear : linear-gradient(to right, #0057D9, #1389D8);
+	--shadow-black : 0 5px 15px rgba(0,0,0,0,1);
+}
 /* body */
 body {
 	min-height: 3000px;
@@ -19,15 +25,37 @@ body {
 	text-transform: uppercase;
 	border-radius: 40px;
 	padding: 8px 30px 8px 30px;
+	color:  white;
 }
-
-
+.tombol:hover {
+	background: linear-gradient(to right, #0057D9, #1389D8);
+	color:  white;
+}
+.unactivelink {
+	pointer-events: none;
+	cursor:  default;
+}
+/* Function for make border bottom */
+.row .col a::after {
+	content: '';
+	display: block;
+	border-bottom: 6px solid var(--mainblue);
+	width: 6%;
+	margin:  auto;
+}
+.title {
+	font-family: var(--bestfont);
+	font-weight: 400;
+	font-size: 2.5rem;
+	color: black;
+	margin: auto;
+}
 
 /* Jumbotron */
 .jumbotron {
 	background-image: url(img/jumbotron.jpg);
 	background-size: cover;
-	height: 660px;
+	height: 600px;
 	text-align: center;
 	position: relative;
 }
@@ -36,7 +64,7 @@ body {
 	padding-top: 24vh;
 	font-weight: 200;
 	font-size: 50px;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.8)
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
 }
 
 .jumbotron .display-4 span {
@@ -50,7 +78,7 @@ body {
 	margin-top: -20px;
 	background-color: white;
 	position: relative;
-	padding: 15px;
+	padding:  20px 0 20px 0;
 	margin-bottom: 20vh;
 }
 
@@ -59,17 +87,65 @@ body {
 }
 .info-panel h4 {
 	text-transform: uppercase;
+	padding-bottom:  15px;
+	font-family: var(--bestfont);
 }
 
 /* Features */
-.textbest {
-	margin-bottom: -5px;
-	font-family: sans-serif;
+#Features {
+	margin-bottom:  7rem;
 }
-.features h4{
-	font-family: viga, sans-serif;
-	font-size: 55px	;
+.features .card {
+	margin-top: 15%;
+	margin-left: 20px;
 }
+.card i {
+	color: var(--mainblue);
+}
+.card .fa-digital-tachograph {
+	padding:  36px 0 14px 0;
+}
+.fa-digital-tachograph {
+	background : -webkit-linear-gradient(#003C96,#99BBFF);
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;
+}
+.card .fa-mobile {
+	padding:  35px 0 14px 0;
+}
+.fa-mobile {
+	background : -webkit-linear-gradient(#003C96,#99BBFF);
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;	
+
+}
+.card .fa-edit {
+	padding:  30px 0 20px 5px;
+}
+.fa-edit {
+	background : -webkit-linear-gradient(#003C96,#99BBFF);
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;	
+}
+.card h4 {
+	font-family: var(--bestfont);
+	font-weight: bold;
+	color:  #626262;
+}
+
+
+/* Pricing */
+#Pricing {
+	font-family: var(--bestfont);
+}
+.pricing-body ul li{
+	list-style: none;
+}
+.pricing-plan {
+	box-shadow: var(--shadow-black);
+}
+
+
 
 /* Desktop Version */
 @media (min-width: 992px) {
@@ -79,7 +155,7 @@ body {
 	}
 	.nav-link {
 		text-transform: uppercase;
-		margin-right: 20px;
+		margin-right: 25px;
 	}
 	.nav-link:hover::after {
 		content: '';
@@ -100,5 +176,16 @@ body {
 	}
 	.info-panel {
 		margin-top: -65px;
+		padding: 15px;
+	}
+	.info-panel h4 {
+		padding-bottom:  0;
+	}
+	.card {
+		transition: 0.9s;
+		cursor: pointer;
+	}
+	.card:hover {
+		transform: scale(1.06);
 	}
 }
