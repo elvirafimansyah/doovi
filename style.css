@@ -28,7 +28,7 @@ body {
 	color:  white;
 }
 .tombol:hover {
-	background: linear-gradient(to right, #0057D9, #1389D8);
+	background: linear-gradient(to right, #1D77FD, #428BF9);
 	color:  white;
 }
 .unactivelink {
@@ -45,8 +45,8 @@ body {
 }
 .title {
 	font-family: var(--bestfont);
-	font-weight: 400;
-	font-size: 2.5rem;
+	font-weight: 600;
+	font-size: 2.8rem;
 	color: black;
 	margin: auto;
 }
@@ -93,7 +93,11 @@ body {
 
 /* Features */
 #Features {
-	margin-bottom:  7rem;
+	margin-bottom:  8.5rem;
+}
+.title span {
+	color:  #5865F2;
+	font-weight: 600;
 }
 .features .card {
 	margin-top: 15%;
@@ -133,18 +137,72 @@ body {
 	color:  #626262;
 }
 
+/* Info */
+#Info {
+	background-color: #F6F6F6;
+	margin-bottom: 8rem;
+	padding: 30px 0 30px 0;
+}
+.info h3 {
+	font-family: var(--bestfont);
+	text-transform: capitalize;
+	font-size:  25px;
+	font-weight: bold;
+}
+.info p {
+	font-size: 17px;
+	margin:  20px 0;
+	color:  #828181;
+}
+
 
 /* Pricing */
 #Pricing {
 	font-family: var(--bestfont);
 }
-.pricing-body ul li{
-	list-style: none;
-}
 .pricing-plan {
-	box-shadow: var(--shadow-black);
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 10px;
+	margin: 15% 6% 0 0;
+	margin-left: 20px;
+	cursor:  pointer;
 }
-
+.pricing-plan .pricing-header {
+	padding:  20px 30px	;
+	border-bottom:  1px solid #DEDEDE;
+}
+.pricing-plan .pricing-price {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	padding:  50px 30px 60px;
+	line-height: 0.1;
+}
+.pricing-price .harga {
+	font-size:  80px;
+	font-weight: 700;
+	color:  var(--mainblue);
+}
+.pricing-plan .pricing-header h3 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 450;
+	margin:  0;
+}
+.pricing-plan .pricing-body ul li i {
+	color:  #333333;
+}
+.pricing-plan .pricing-body ul li {
+	list-style: none;
+	font-size: 16px;
+	font-weight: 300;
+	color:  #767676;
+	text-transform: capitalize;
+	padding-bottom:  7px;
+}
+.pricing-plan .pricing-footer {
+	padding:  15px 30px 30px;
+}
 
 
 /* Desktop Version */
@@ -187,5 +245,13 @@ body {
 	}
 	.card:hover {
 		transform: scale(1.06);
+	}
+	.info h3 {
+		margin-top:  8rem;
+		font-size:  38px;
+	}
+	.pricing-plan:hover {
+		transform: scale(1.02);
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 	}
 }
