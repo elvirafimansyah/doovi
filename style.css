@@ -6,9 +6,7 @@
 	--maingray : #F6F6F6;
 }
 /* body */
-body {
-	min-height: 5000px;
-}
+
 
 /* Navbar */
 .navbar {
@@ -245,6 +243,7 @@ body {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 17px;
 	margin-top:  2rem;
+	margin-left:  1.7rem;
 }
 /* Contact us */
 #Contact {
