@@ -245,6 +245,12 @@
 	margin-top:  2rem;
 	margin-left:  1.7rem;
 }
+#About .learnmore {
+
+}
+.learnmore a {
+	text-decoration: none;
+}
 /* Contact us */
 #Contact {
 	padding: 60px 0 60px 0;
