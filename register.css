@@ -97,7 +97,7 @@ input[type="submit"]:hover {
 /* Mobile Version */
 @media (max-width:  575.98px) {
 	.center {
-		top:  40%;
+		top:  50%;
 		left:  6%;
 		width: 320px;
 	}
