@@ -4,9 +4,8 @@
 	--mainlinear : linear-gradient(to right, #0057D9, #1389D8);
 	--shadow-black : 0 5px 15px rgba(0,0,0,0,1);
 	--maingray : #F6F6F6;
+	--favfang : #7857FE;
 }
-/* body */
-
 
 /* Navbar */
 .navbar {
@@ -245,16 +244,58 @@
 	margin-top:  2rem;
 	margin-left:  1.7rem;
 }
-#About .learnmore {
-
-}
 .learnmore a {
 	text-decoration: none;
+}
+
+/* Testimonial */
+.testimonial {
+	background-color:  var(--maingray);
+	text-align:  center;
+	padding:  30px 0;
+	border-top:  2px solid #8B8B8B;
+	border-bottom:  2px solid #8B8B8B;
+}
+.testimonial h5 {
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size:  26px;
+	color:  black;
+	font-family: var(--bestfont);
+}
+.testimonial span {
+	font-weight: 700;
+	color:  var(--mainblue);
+}
+.testimonial p {
+	color: #767676;
+	font-weight:  100;
+}
+.testimonial figure img {
+	border:  2px solid #7857FE;
+	margin-top: -25px;
+}
+.testimonial figure h5 {
+	font-size:  30px;
+	color:  #2C2C2C;
+	font-weight:  bold;
+}
+.testimonial .figure-caption p {
+	font-size:  16px;
+} 
+.testimonial .socialmedia {
+	margin-top: -15px;
+}
+.testimonial .socialmedia a {
+	margin-right: 10px;
+	text-decoration: none;
+}
+.testimonial .socialmedia a:hover {
+	color:  var(--mainblue);
 }
 /* Contact us */
 #Contact {
 	padding: 60px 0 60px 0;
-	background-color:  #F6F6F6;
 }
 /* Desktop Version */
 @media (min-width: 992px) {
@@ -307,5 +348,8 @@
 	}
 	.download .app-download-item {
 		margin-left: 0;
+	}
+	.testimonial h5 {
+		font-size:  40px;
 	}
 }
