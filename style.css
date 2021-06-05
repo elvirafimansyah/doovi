@@ -226,18 +226,62 @@
 	margin: 17px 0;
 	font-family: var(--bestfont);
 }
-.download .app-download-item .btn {
-	pointer-events: none;
-}
 .fa-apple, .fa-windows {
 	padding-bottom:  3px;
 }
 .fa-windows {
 	color:  #2D74D7;
 }
+
+/* How It Works */
+.work-item {
+	padding:  30px;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 6rem;
+}
+.step.line-bottom::before {
+	content: '';
+	position: absolute;
+	height:  70%;
+	width:  3px;
+	left:  50%;
+	top:  88%;
+	background-color: var(--mainblue);
+}
+.work-item .step {
+	height:  60px;
+	width: 60px;
+	display: inline-block;
+	background-color:  var(--mainblue);
+	line-height: 60px;
+	border-radius:  50%;
+	color:  white;
+	font-weight: bold;
+	margin:  15px 0;
+}
+.work-item h3 {
+	text-transform: capitalize;
+	font-weight: 650;
+	font-size:  22px;
+	font-family: var(--bestfont);
+}
+.work-item a {
+	color:  var(--mainblue);
+	font-family: var(--bestfont);
+	font-size: 17px;
+	text-decoration: none;
+}
+.work-item a:hover {
+	text-decoration: underline;
+}
+
+
 /* About Us */
 #About {
-	margin-bottom:  8.5rem;
+	background-color: var(--maingray);
+	padding:  50px 0;
+		border-top:  2px solid #BBBBBB;
 }
 .aboutus p {
 	font-family: 'Roboto Mono', monospace;
@@ -251,11 +295,12 @@
 
 /* Testimonial */
 .testimonial {
-	background-color:  var(--maingray);
 	text-align:  center;
 	padding:  30px 0;
 	border-top:  2px solid #BBBBBB;
-	border-bottom:  2px solid #BBBBBB;
+}
+.testimonial .testi {
+	margin-top:  3rem;
 }
 .testimonial h5 {
 	text-transform: capitalize;
@@ -299,7 +344,13 @@
 }
 /* Contact us */
 #Contact {
+	background-color:  var(--maingray);
 	padding: 60px 0 60px 0;
+	margin-top:  3rem;
+}
+/* Footer */
+footer .med {
+	margin-left:  22px;
 }
 /* Desktop Version */
 @media (min-width: 992px) {
@@ -352,6 +403,19 @@
 	}
 	.download .app-download-item {
 		margin-left: 0;
+	}
+	.work-item.line-right::before {
+		content: '';
+		position: absolute;
+		height:  2.2px;
+		width:  95%;
+		left:  55%;
+		top:  75px;
+		background-color: var(--mainblue);
+	}
+	.step.line-bottom::before {
+		content: '';
+		position: relative;
 	}
 	.testimonial h5 {
 		font-size:  40px;
