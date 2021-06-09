@@ -17,6 +17,7 @@
 	font-family: viga, sans-serif;
 	font-size: 32px;
 }
+
 /* Kegunaan */
 .btn {
 	background-color:  var(--mainblue);
@@ -49,6 +50,7 @@
 	margin: auto;
 }
 
+
 /* Jumbotron */
 .jumbotron {
 	background-image: url(img/jumbotron.jpg);
@@ -74,7 +76,11 @@
 .info-panel {
 	border-radius: 13px;
 	margin-top: -13px;
-	background-color: white;
+	background: hsla(216, 100%, 90%, 1);
+	background: linear-gradient(90deg, hsla(216, 100%, 90%, 1) 16%, hsla(0, 0%, 100%, 1) 51%);
+	background: -moz-linear-gradient(90deg, hsla(216, 100%, 90%, 1) 16%, hsla(0, 0%, 100%, 1) 51%);
+	background: -webkit-linear-gradient(90deg, hsla(216, 100%, 90%, 1) 16%, hsla(0, 0%, 100%, 1) 51%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#cadfff", endColorstr="#ffffff", GradientType=1 );
 	position: relative;
 	padding:  20px 0 20px 0;
 	margin-bottom: 20vh;
