@@ -76,11 +76,7 @@
 .info-panel {
 	border-radius: 13px;
 	margin-top: -13px;
-	background: hsla(216, 100%, 90%, 1);
-	background: linear-gradient(90deg, hsla(216, 100%, 90%, 1) 16%, hsla(0, 0%, 100%, 1) 51%);
-	background: -moz-linear-gradient(90deg, hsla(216, 100%, 90%, 1) 16%, hsla(0, 0%, 100%, 1) 51%);
-	background: -webkit-linear-gradient(90deg, hsla(216, 100%, 90%, 1) 16%, hsla(0, 0%, 100%, 1) 51%);
-	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#cadfff", endColorstr="#ffffff", GradientType=1 );
+	background: linear-gradient(180deg, #CADFFF 0%, rgba(252, 253, 255, 0.0625) 34.9%, rgba(0, 48, 120, 0.0616199) 99.98%, rgba(0, 53, 134, 0.0525) 99.99%, rgba(255, 255, 255, 0) 100%);
 	position: relative;
 	padding:  20px 0 20px 0;
 	margin-bottom: 20vh;
